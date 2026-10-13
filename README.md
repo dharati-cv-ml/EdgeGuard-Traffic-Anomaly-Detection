@@ -68,10 +68,11 @@ The interactive dashboard presents traffic volume, anomaly scores, model predict
 
 The Dataset Explorer allows users to browse traffic records, inspect individual requests, view anomaly scores, and compare model predictions with synthetic ground-truth labels.
 
-![EdgeGuard Dataset Explorer](screenshots/Dataset Explore.png)
+![EdgeGuard Dataset Explorer](screenshots/DatasetExplore.png)
 
 ### Individual Request Inspection
 ![Selected Request Details](screenshots/Request.png)
+
 
 ## Ethical use
 
