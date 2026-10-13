@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edgeguard-desktop-complete"
+version = "1.0.0"
+description = "Offline desktop security traffic anomaly-detection project"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+packages = ["edgeguard"]

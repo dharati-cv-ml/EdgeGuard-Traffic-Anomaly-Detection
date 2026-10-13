@@ -1,0 +1,27 @@
+{
+  "algorithm": "robust_log_deviation_v1",
+  "centers": {
+    "requests_per_min": 48.05,
+    "error_rate": 0.025349999999999998,
+    "avg_response_ms": 117.53999999999999,
+    "bytes_out_kb": 708.15,
+    "unique_paths": 8.0
+  },
+  "scales": {
+    "requests_per_min": 14.751869999999998,
+    "error_rate": 0.013714050000000007,
+    "avg_response_ms": 35.093142,
+    "bytes_out_kb": 152.63366999999997,
+    "unique_paths": 2.9652
+  },
+  "threshold": 0.863224600000001,
+  "contamination": 0.08,
+  "training_size": 400,
+  "features": [
+    "requests_per_min",
+    "error_rate",
+    "avg_response_ms",
+    "bytes_out_kb",
+    "unique_paths"
+  ]
+}

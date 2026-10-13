@@ -1,0 +1,12 @@
+{
+  "TP": 31,
+  "FP": 1,
+  "TN": 368,
+  "FN": 0,
+  "count": 400,
+  "labeled_count": 400,
+  "review_count": 32,
+  "precision": 0.9688,
+  "recall": 1.0,
+  "false_positive_rate": 0.0027
+}

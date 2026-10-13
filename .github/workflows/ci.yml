@@ -1,0 +1,23 @@
+name: desktop-project-ci
+on:
+  push:
+  pull_request:
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Syntax check
+        run: python -m compileall -q edgeguard tests
+      - name: Unit tests (headless)
+        run: python -m unittest discover -s tests -v
+      - name: Train and evaluate CLI
+        run: |
+          python -m edgeguard.cli train --input data/sample.csv --model /tmp/model.json
+          python -m edgeguard.cli evaluate --input data/sample.csv --model /tmp/model.json --output /tmp/results.json
