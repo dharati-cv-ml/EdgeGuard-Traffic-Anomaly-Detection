@@ -56,6 +56,23 @@ A sound follow-up is to collect privacy-safe non-synthetic or independently gene
 
 `edgeguard/core.py` validation, training, scoring, metrics; `edgeguard/desktop.py` Tkinter GUI; `edgeguard/cli.py` CLI; `data/sample.csv` synthetic records; `tests/` unit tests; `docs/ARCHITECTURE.md` design; `.github/workflows/ci.yml` automated tests.
 
+## Application Screenshots
+
+### Analytics Dashboard
+
+The interactive dashboard presents traffic volume, anomaly scores, model predictions, and evaluation metrics from synthetic network traffic.
+
+![EdgeGuard Analytics Dashboard](screenshots/Dashboard.png)
+
+### Dataset Explorer
+
+The Dataset Explorer allows users to browse traffic records, inspect individual requests, view anomaly scores, and compare model predictions with synthetic ground-truth labels.
+
+![EdgeGuard Dataset Explorer](screenshots/Dataset Explorer.png)
+
+### Individual Request Inspection
+![Selected Request Details](screenshots/Request.png)
+
 ## Ethical use
 
 All included traffic records are synthetic. This prototype neither intercepts traffic nor sends network requests. It is **not** a web application firewall or validated security product.
